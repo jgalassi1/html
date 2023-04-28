@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">  
+  <!--once we figure out blocks on flask or php we use "extends header.html" here-->
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>
+      Iron Manor
+    </title>
+    <div class="navbar">
+      <button type="button" class="btn-logo">
+          <img src="Screen Shot 2023-04-27 at 2.04.07 AM.png" alt="homejpg" width=45px; height=40px;/>
+      </button>
+      <button type="button" class="btn btn-warning">
+        Feed
+      </button>
+      <button type="button" class="btn btn-warning">
+        Explore Meal Plans
+      </button>
+      <button type="button" class="btn btn-warning">
+        Explore Workout Plans
+      </button>
+      <button type="button" class="btn btn-outline-warning">
+        Login
+      </button> <!---Here We Could also do -->
+    </div>
+  </head>
+  <hr>
+  <hr>
+  <hr>
+
+  <body>
+    <div class="login-container"> 
+        <h1>Iron Manor</h1>
+        <h3 style="text-align: center;">Greatness Awaits</h3>
+        <!-- <form class="form-signin" method=POST action="/login"> -->
+            <!-- <label for="inputUserName" class="sr-only">User Name</label>
+            <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Username" required="" autofocus>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required="">
+            <button type=submit id="btnSignIn" class="btn btn-lg btn-primary btn-block" type="button">Sign In</button>
+    </form> -->
+        <form>
+            <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Username/Email</label>
+            </div>
+            <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 btn-lg btn-outline-warning" type="submit">Sign in</button>
+        </form>
+    </div>
+  </body>
