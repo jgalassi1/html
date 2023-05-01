@@ -1,0 +1,76 @@
+1;Push Day;Chest;Triceps;Shoulders;NULL;1;3x8: Barbell Bench Press, 2x12: Cable Tricep Pushdowns, 3x10: Dumbbell Shoulder Press
+2;Pull Day;Upper Back;Lats;Biceps;NULL;2;2x6: Dumbbell Chest Press, 3x8: Lat Pullovers, 2x8: Chest Supported Dumbbell Row, 2x7: Dumbbell Bicep Curl
+3;Leg Day;Quads;Hamstrings;Calves;Glutes;2;3x8: Barbell Squat, 3x12: Leg Press Machine, 2x10: Dumbbell Romanian Deadlift, 3x15: Calf Raise Machine
+4;Upper Body Day;Upper Body;NULL;NULL;NULL;4;3x10: Dumbbell Bench Press, 2x12: Dumbbell Shoulder Flys
+5;Full Body Day;Chest;Biceps;Hamstrings;Quads;4;4x10: Push-ups, 4x10: Bicep Curls with Resistance Bands, 4x12: Bodyweight Lunges
+6;Push Day;Chest;Triceps;Shoulders;NULL;1;3x10: Incline Barbell Bench Press, 2x12: Cable Tricep Pushdowns, 3x10: Dumbbell Lateral Raise
+7;Pull Day;Lats;Biceps;Upper Back;NULL;2;3x10: Seated Cable Rows, 2x8: Dumbbell Hammer Curls, 2x12: Lat Pulldowns
+8;Leg Day;Quads;Hamstrings;Glutes;Calves;1;3x8: Barbell Deadlift, 3x10: Leg Extension Machine, 2x10: Hip Thrusts, 3x15: Standing Calf Raise Machine
+9;Upper Body Day;Chest;Shoulders;Triceps;NULL;4;2x10: Dumbbell Bench Press, 2x10: Dumbbell Shoulder Press, 2x12: Dumbbell Skull Crushers
+10;Full Body Day;Upper Body;Lower Body;NULL;NULL;4;3x10: Bodyweight Squats, 3x10: Push-ups, 3x10: Lunges, 3x10: Tricep Dips
+43;Full Body Day;Upper Back;Biceps;Glutes;Triceps;4;4x8: Burpees, 3x10: Pull-Ups, 3x12: Squat Jumps, 3x10: Hammer Curls, 2x12: Tricep Extensions
+44;Upper Body Day;Upper Body;NULL;NULL;NULL;1;3x8: Barbell Bench Press, 3x8: Pull-Ups, 2x10: Seated Cable Rows, 2x12: Lateral Raises, 2x12: Cable Tricep Pushdowns
+45;Pull Day;Lats;Biceps;NULL;NULL;1;2x8: Wide-Grip Pull-Downs, 2x8: Barbell Curls, 2x8: Reverse-Grip Pull-Downs, 2x10: Hammer Curls
+46;Chest + Back Day;Chest;Back;NULL;NULL;2;3x10: Dumbbell Bench Press, 3x10: Bent-Over Rows, 2x12: Incline Dumbbell Flys, 2x12: Lat Pulldowns
+47;Legs and Quads Day;Quads;Hamstrings;Calves;Glutes;1;3x10: Leg Press, 2x10: Leg Extensions, 2x10: Leg Curls, 3x12: Calf Raises, 2x12: Hip Thrusts
+48;Push Day;Shoulders;Chest;Triceps;NULL;1;3x8: Military Press, 3x8: Incline Barbell Bench Press, 3x10: Tricep Pushdowns, 2x12: Cable Flys
+49;Upper Body Day;Upper Body;NULL;NULL;NULL;1;2x10: Cable Rows, 2x12: Lateral Raises, 2x10: Pull-Ups, 2x12: Cable Tricep Pushdowns
+50;Full Body Day;Lats;Hamstrings;Abs;Calves;4;3x10: Dumbbell Deadlifts, 3x12: Leg Raises, 2x12: Standing Calf Raises, 2x12: Dumbbell Rows
+51;Pull Day;Upper Back;Biceps;NULL;NULL;2;3x8: Seated Cable Rows, 2x10: Preacher Curls, 2x10: Wide-Grip Pull-Downs, 2x10: Hammer Curls
+52;Upper Body Day;Upper Body;NULL;NULL;NULL;2;3x10: Barbell Bench Press, 3x10: Seated Cable Rows, 2x12: Lateral Raises, 2x12: Cable Tricep Pushdowns
+53;Full Body Day;Quads;Hamstrings;Abs;Glutes;4;3x10: Bulgarian Split Squats, 3x12: Leg Raises, 2x12: Standing Calf Raises, 2x12: Glute Bridges
+54;Chest + Back Day;Chest;Back;NULL;NULL;2;3x10: Dumbbell Flys, 3x10: Bent-Over Rows, 2x12: Incline Dumbbell Bench Press, 2x12: Lat Pulldowns
+112;Chest + Back Day;Chest;Back;NULL;NULL;1;4x6: Barbell Bench Press, 4x8: T-Bar Rows, 4x10: Incline Dumbbell Flys, 3x12: Lat Pulldowns
+113;Full Body Day;Upper Body;Lower Body;NULL;NULL;2;3x8: Barbell Deadlifts, 3x10: Incline Bench Press, 3x12: Leg Extensions, 3x15: Standing Calf Raises
+114;Upper Body Day;Upper Body;NULL;NULL;NULL;4;3x10: Dumbbell Shoulder Press, 3x12: Seated Cable Rows, 3x15: Tricep Kickbacks
+115;Legs and Quads Day;Quads;Hamstrings;Glutes;NULL;2;3x10: Barbell Squats, 3x12: Leg Press, 3x15: Romanian Deadlifts, 3x20: Glute Bridges
+116;Full Body Day;Upper Body;Lower Body;NULL;NULL;4;3x8: Pushups, 3x10: Bodyweight Squats, 3x12: Lunges, 3x15: Situps
+117;Pull Day;Lats;Biceps;NULL;NULL;1;4x8: Pullups, 4x10: Seated Cable Rows, 4x12: Dumbbell Bicep Curls, 3x15: Hammer Curls
+118;Chest + Triceps Day;Chest;Triceps;NULL;NULL;2;3x10: Incline Dumbbell Bench Press, 3x12: Close-Grip Bench Press, 3x15: Tricep Pushdowns
+119;Upper Body Day;Upper Body;NULL;NULL;NULL;4;3x8: Dumbbell Chest Flys, 3x10: Dumbbell Shoulder Press, 3x12: Dumbbell Rows
+120;Legs and Glutes Day;Quads;Hamstrings;Glutes;NULL;1;3x8: Barbell Lunges, 3x10: Deadlifts, 3x12: Leg Press, 3x15: Calf Raises
+121;Full Body Day;Upper Body;Lower Body;NULL;NULL;4;3x10: Chin-Ups, 3x12: Bodyweight Squats, 3x15: Lunges, 3x20: Russian Twists
+122;Push Day;Shoulders;Triceps;NULL;NULL;2;3x8: Seated Dumbbell Shoulder Press, 3x10: Tricep Dips, 3x12: Cable Flys
+123;Back Day;Lats;Lower Back;NULL;NULL;1;3x10: Barbell Deadlifts, 3x12: Lat Pulldowns, 3x15: Bent-Over Rows
+124;Chest + Biceps Day;Chest;Biceps;NULL;2;4x6: Barbell Bench Press, 4x8: Standing Barbell Curls, 4x10: Incline Dumbbell Curls
+179;Upper Body Day;Upper Body;NULL;NULL;NULL;4;3x8: Dumbbell Bench Press, 3x10: Dumbbell Rows, 3x12: Dumbbell Shoulder Press
+180;Full Body Day;Upper Body;Lower Body;Back;Chest;4;2x10: Pull-ups, 2x15: Push-ups, 3x10: Lunges, 3x10: Leg Raises;
+125;Leg Day;Quads;Hamstrings;Calves;Glutes;2;3x8: Barbell Squats, 3x10: Leg Press, 3x10: Romanian Deadlift, 3x12: Calf Raise Machine;
+126;Push Day;Chest;Shoulders;Triceps;Upper Back;1;3x10: Barbell Bench Press, 3x12: Dumbbell Shoulder Press, 3x10: Tricep Pushdown, 3x10: Seated Cable Row;
+127;Pull Day;Lats;Biceps;Upper Back;Shoulders;4;3x10: Dumbbell Bicep Curl, 3x12: Lat Pulldown Machine, 3x10: Dumbbell Rear Delt Fly, 3x12: Standing Dumbbell Shoulder Press;
+128;Upper Body Day;Upper Body;NULL;NULL;NULL;1;3x10: Barbell Overhead Press, 3x10: Barbell Bench Press, 3x12: Pull-ups, 3x12: Cable Row;
+129;Full Body Day;Upper Body;Lower Body;Back;Chest;4;3x8: Dumbbell Chest Press, 3x10: Dumbbell Lunges, 3x10: Chest Supported T-bar Rows, 3x12: Dumbbell Flyes;
+130;Chest + Triceps Day;Chest;Triceps;NULL;NULL;1;3x10: Barbell Bench Press, 3x10: Cable Tricep Pushdowns, 3x10: Incline Dumbbell Bench Press, 3x12: Skullcrushers;
+131;Pull Day;Lats;Biceps;Upper Back;Shoulders;1;3x10: Lat Pulldown Machine, 3x12: Standing Dumbbell Curls, 3x12: Seated Cable Rows, 3x12: Dumbbell Lateral Raises;
+132;Upper Body Day;Upper Body;NULL;NULL;NULL;1;3x10: Dumbbell Chest Press, 3x10: Cable Crossovers, 3x12: Pull-ups, 3x12: Cable Rows;
+133;Full Body Day;Upper Body;Lower Body;Back;Chest;1;3x10: Barbell Squats, 3x10: Barbell Rows, 3x10: Dumbbell Bench Press, 3x12: Pull-ups;
+134;Legs and Quads Day;Quads;Hamstrings;Calves;Glutes;2;3x10: Barbell Squats, 3x10: Leg Press, 3x12: Lying Leg Curls, 3x12: Leg Extensions;
+135;Pull Day;Lats;Biceps;Upper Back;Shoulders;4;3x10: Pull-ups, 3x12: Dumbbell Rows, 3x12: Dumbbell Bicep Curls, 3x12: Lateral Raises;
+103;Full Body Day;Upper Body;Lower Body;Chest;Triceps;1;3x8: Barbell Squats, 3x10: Seated Dumbbell Shoulder Press, 3x10: Bench Press, 3x10: Cable Tricep Pushdowns;
+104;Legs and Quads Day;Quads;Hamstrings;Glutes;Calves;1;2x10: Leg Extensions, 2x10: Leg Curls, 3x8: Barbell Squats, 3x10: Dumbbell Romanian Deadlifts;
+105;Chest + Back Day;Chest;Back;NULL;NULL;2;3x8: Cable Rows, 3x10: Dumbbell Flyes, 3x10: Bench Press, 3x8: Pullups;
+106;Pull Day;Upper Back;Lats;Biceps;NULL;2;2x6: Dumbell Chest Press, 3x8: Lat Pullovers, 2x8: Chest Supported Dumbell Row, 2x7: Dumbell Bicep Curl;
+107;Upper Body Day;Upper Body;NULL;NULL;NULL;4;3x10: Pushups, 3x10: Dumbbell Shoulder Press, 3x10: Cable Tricep Pushdowns, 3x10: Pullups;
+108;Full Body Day;Upper Body;Lower Body;Chest;Back;1;2x8: Deadlifts, 3x10: Pullups, 3x8: Bench Press, 3x10: Barbell Rows;
+109;Chest + Triceps Day;Chest;Triceps;NULL;NULL;1;2x8: Incline Dumbbell Press, 3x10: Cable Tricep Pushdowns, 2x10: Flat Dumbbell Press, 3x10: Overhead Dumbbell Tricep Extensions;
+143;Full Body Day;Upper Back;Chest;Biceps;Triceps;1;3x8: Barbell Row, 3x8: Incline Barbell Bench Press, 3x8: Hammer Curls, 3x8: Skull Crushers
+144;Legs and Glutes Day;Quads;Hamstrings;Glutes;Calfs;2;3x8: Barbell Squats, 3x8: Romanian Deadlifts, 3x8: Glute Bridges, 3x12: Standing Calf Raises
+145;Pull Day;Lats;Biceps;Abs;NULL;2;3x8: Pull Ups, 3x10: Barbell Curls, 3x12: Cable Crunches, 3x12: Seated Rows
+146;Upper Body Day;Upper Body;NULL;NULL;NULL;4;3x8: Dumbbell Bench Press, 3x10: Dumbbell Shoulder Press, 3x12: Dumbbell Rows
+147;Chest and Triceps Day;Chest;Triceps;NULL;NULL;1;3x8: Bench Press, 3x10: Skull Crushers, 3x12: Cable Flys
+148;Full Body Day;Back;Biceps;Abs;NULL;2;3x8: Deadlifts, 3x10: Barbell Curls, 3x12: Weighted Decline Sit-Ups
+149;Legs and Calves Day;Quads;Calfs;NULL;NULL;1;3x8: Front Squats, 3x12: Seated Calf Raises, 3x12: Leg Extensions
+150;Push Day;Shoulders;Triceps;Chest;NULL;1;3x8: Overhead Press, 3x10: Tricep Dips, 3x8: Dumbbell Chest Flys
+86;Push Day;Chest;Triceps;Shoulders;NULL;1;4x6: Barbell Bench Press, 3x8: Cable Tricep Pushdowns, 3x10: Dumbbell Lateral Raises, 3x8: Incline Dumbbell Flyes
+87;Legs and Glutes Day;Quads;Hamstrings;Glutes;NULL;2;3x8: Barbell Squats, 3x10: Romanian Deadlifts, 3x12: Glute Bridges, 2x12: Leg Press
+88;Upper Body Day;Upper Body;NULL;NULL;NULL;4;3x8: Pushups, 3x10: Pullups, 3x12: Dips, 2x10: Chin-ups
+89;Full Body Day;Full Body;NULL;NULL;NULL;4;3x8: Dumbbell Goblet Squats, 3x10: Dumbbell Bench Press, 3x12: Dumbbell Lunges, 2x12: Dumbbell Rows
+90;Back and Biceps Day;Upper Back;Lats;Biceps;NULL;1;4x6: Barbell Rows, 3x8: Lat Pulldowns, 3x10: EZ Bar Curls, 2x12: Hammer Curls
+91;Chest and Triceps Day;Chest;Triceps;NULL;2;3x8: Incline Dumbbell Bench Press, 3x10: Skull Crushers, 3x12: Cable Chest Flyes, 2x10: Cable Tricep Pushdowns
+92;Legs Day;Quads;Hamstrings;NULL;4;3x8: Barbell Lunges, 3x10: Romanian Deadlifts, 3x12: Leg Extensions, 2x12: Leg Curls
+93;Push Day;Chest;Triceps;Shoulders;1;4x6: Barbell Bench Press, 3x8: Cable Tricep Pushdowns, 3x10: Dumbbell Lateral Raises, 3x8: Incline Dumbbell Flyes
+94;Pull Day;Upper Back;Lats;Biceps;2;4x6: Barbell Rows, 3x8: Lat Pulldowns, 3x10: EZ Bar Curls, 2x12: Hammer Curls
+95;Upper Body Day;Upper Body;NULL;NULL;4;3x8: Pushups, 3x10: Pullups, 3x12: Dips, 2x10: Chin-ups
+96;Full Body Day;Full Body;NULL;NULL;4;3x8: Dumbbell Goblet Squats, 3x10: Dumbbell Bench Press, 3x12: Dumbbell Lunges, 2x12: Dumbbell Rows
+97;Legs and Glutes Day;Quads;Hamstrings;Glutes;1;3x8: Barbell Squats, 3x10: Romanian Deadlifts, 3x12: Glute Bridges, 2x12: Leg Press
+98;Chest and Triceps Day;Chest;Triceps;NULL;2;3x8: Incline Dumbbell Bench Press, 3x10: Skull Crushers, 3x12: Cable Chest Flyes, 2x10: Cable Tricep Pushdowns
