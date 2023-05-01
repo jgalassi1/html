@@ -1,4 +1,4 @@
-create table post
+create table posts
 (
     post_id number(5),
     owner varchar(255),
@@ -6,6 +6,6 @@ create table post
     content varchar(255)
 )
 /
-alter table post add constraint post_id_pk primary key (post_id);
-alter table post add foreign key (owner) references users (username)
+alter table posts add constraint posts_id_pk primary key (post_id);
+alter table posts add foreign key (owner) references users (username)
 /
