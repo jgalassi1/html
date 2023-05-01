@@ -2,7 +2,8 @@ create table workout_plan
 (
     wp_id number(5),
     owner varchar(255),
-    split_name varchar(255)
+    split_name varchar(255),
+    num_days number(5)
 )
 /
 alter table workout_plan add constraint wp_id_pk primary key (wp_id);
