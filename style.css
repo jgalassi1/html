@@ -59,7 +59,24 @@ h1{
 	margin-left: 3%;
 	margin-right: auto;
 	color: goldenrod;
-  }
+	float: left;
+	opacity: 98%;
+}
+.right-column{
+	width: 45%; 
+	height: 40vh; 
+	background-color: #363636; 
+	border-radius: 10px; 
+	border-color: goldenrod;
+	border-width: 4px;
+	padding: 10px;
+	box-sizing: border-box; 
+	margin-right: 3%;
+	margin-left: auto;
+	color: goldenrod;
+	float: right;
+	opacity: 98%;
+}
 .btn-warning{
 	color: #005000;
 	font-family: Georgia, 'Times New Roman', Times, serif;
@@ -83,9 +100,6 @@ h1{
 	appearance: none;
     background-color: inherit;
 }
-/* .btn-logo:hover{
-
-} */
 .welcome{
 	display: block;
 	margin-left: auto;
@@ -93,4 +107,27 @@ h1{
 	width: 50%;
 	opacity: 97%;
 	z-index: 0;
+}
+.login-container{
+	width: 45%; 
+	height: 45vh; 
+	background-color: #363636; 
+	border-radius: 10px; 
+	padding: 10px;
+	box-sizing: border-box; 
+	color: goldenrod;
+	float: auto;
+	margin:auto;
+	opacity: 98%;
+}
+
+.btn-lg {
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-font-size: 1.25rem;
+    --bs-btn-border-radius: var(--bs-border-radius-lg);
+	background-color: #2b2b2b;
+}
+.w-100 {
+    width: 100%!important;
 }
