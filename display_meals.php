@@ -1,20 +1,19 @@
 <?php
 // Create connection to Oracle
 putenv("ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe/");
-
 $conn = oci_connect("timmy", "timmy", "xe")
     or die("<br>Couldn't connect");
 
 $query = "select *
     from user_mp u, meal_plan mp, meal_mp mmp, meal m
-    where u.username = 'jgalassi' 
+    where u.username = '$user' 
     and u.mp_id = mp.mp_id
     and mp.mp_id = mmp.mp_id
     and mmp.meal_id = m.meal_id
     ORDER BY CASE m.type
-                     WHEN 'breakfast' THEN 1
-                     WHEN 'lunch' THEN 2
-                     WHEN 'dinner' THEN 3
+                     WHEN 'Breakfast' THEN 1
+                     WHEN 'Lunch' THEN 2
+                     WHEN 'Dinner' THEN 3
                    END";
 
 $stid = oci_parse($conn, $query);

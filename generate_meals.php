@@ -2,8 +2,7 @@
 
 $height = 69;
 $weight = 170;
-$type = 2;
-$user = "jgalassi";
+$type = 0;
 // Get the list of meal IDs from the Python function
 
 $python_script = 'meal_alg.py';

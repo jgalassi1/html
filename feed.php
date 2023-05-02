@@ -1,9 +1,4 @@
 <?php
-$username = "timmy";
-$password = "timmy";
-$host = "3.210.165.177";
-$port = "1521";
-$sid = "ORCL";
 
 // Create connection to Oracle
 putenv("ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe/");
@@ -13,7 +8,7 @@ $conn = oci_connect("timmy", "timmy", "xe")
 
 
 // Select all posts from the database
-$query = "select * from post";
+$query = "select * from post where owner != '$user'";
 $stmt = oci_parse($conn, $query);
 $success = oci_execute($stmt);
 
