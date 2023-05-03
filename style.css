@@ -111,6 +111,8 @@ h1 {
 	color: goldenrod;
 	float: auto;
 	margin:auto;
+	margin-top: auto;
+	margin-bottom: auto;
 	opacity: 98%;
 }
 
