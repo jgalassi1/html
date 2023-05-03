@@ -112,7 +112,8 @@ h1 {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
+	width: 20px;
+	height: auto;
 	opacity: 97%;
 	z-index: 0;
 }

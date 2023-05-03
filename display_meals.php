@@ -97,10 +97,9 @@ oci_close($conn);
         </h2>
         <?php foreach ($mealData as $meal): ?>
         <div class="meal">
-            <h3>
-                <?php echo $meal['NAME']; ?>
-            </h3>
             <p>
+                <?php echo $meal['NAME'];
+                        echo ":" ?>
                 <?php echo $meal['CALORIES']; ?> calories -
                 <?php echo $meal['PROTEIN']; ?> g of protein
             </p>

@@ -21,9 +21,11 @@
         <button type="button" class="btn btn-warning">
             Explore Meal Plans
         </button>
-        <button type="button" class="btn btn-warning">
-            Explore Workout Plans
-        </button>
+        <a href="explore_wp.php">
+            <button type="button" class="btn btn-warning">
+                Explore Workout Plans
+            </button>
+        </a>
         <button type="button" class="btn btn-outline-warning">
             Login
         </button>
@@ -49,6 +51,7 @@
         </div>
         <div class="center-column">
             <h2>Lifts</h2> <br>
+            <?php include('display_workouts.php'); ?>
         </div>
         <div class="right-column">
             <h2>Fuel</h2>
