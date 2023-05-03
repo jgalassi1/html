@@ -3,6 +3,7 @@
 $height = 69;
 $weight = 170;
 $type = 0;
+$username = ' ';
 // Get the list of meal IDs from the Python function
 
 $python_script = 'meal_alg.py';
@@ -47,7 +48,7 @@ $row = oci_fetch_array($stid, OCI_ASSOC);
 $counter = $row["COUNTER"];
 
 // create new meal_plan
-$sql = "INSERT INTO meal_plan VALUES ($counter, '$name', 'jgalassi', '$name', $calories, $protein)";
+$sql = "INSERT INTO meal_plan VALUES ($counter, '$name', '$username', '$name', $calories, $protein)";
 $stid = oci_parse($conn, $sql);
 oci_execute($stid);
 
@@ -65,7 +66,7 @@ foreach ($meal_ids as $meal_id) {
 }
 
 // assign meal plan to user
-$sql = "INSERT into user_mp values ('$user', $counter)";
+$sql = "INSERT into user_mp values ('$username', $counter)";
 $stid = oci_parse($conn, $sql);
 $res = oci_execute($stid);
 
@@ -84,9 +85,6 @@ if ($res) {
 
 oci_commit($conn);
 oci_close($conn);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 
 
 ?>

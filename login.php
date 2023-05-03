@@ -1,1 +1,1 @@
-<?php $user = 'jgalassi1'; ?>
+<?php $user = 'jgalassi'; ?>
