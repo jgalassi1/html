@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php require_once 'check_username.php'; ?>
 
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -44,7 +45,17 @@
     <div class="signup-container">
         <h1>Iron Manor</h1>
         <h3>Sign Up</h3>
-        <form action="generate_meals.php" method="post">
+        <form action="signup.php" method="post">
+            <?php
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                $is_username_unique = is_username_unique($_POST['floatingUsername']);
+                if (!$is_username_unique) {
+                    echo "<div class='alert alert-danger'>Username already exists. Please choose a different username.</div>";
+                } else {
+                    include 'generate_meals.php';
+                }
+            }
+            ?>
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-floating">
