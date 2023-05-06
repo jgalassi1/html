@@ -42,6 +42,7 @@ def get_meals(cals, meal_dict, total_protein):
     cur_protein = 0
     used = {}
     meals = []
+    random.shuffle(cals)
     for cal in cals:
         for protein in reversed(meal_dict[cal]):
             if protein[0] + cur_protein > total_protein and protein != meal_dict[cal][0]:

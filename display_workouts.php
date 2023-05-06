@@ -4,7 +4,7 @@ putenv("ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe/");
 $conn = oci_connect("timmy", "timmy", "xe")
     or die("<br>Couldn't connect");
 
-
+date_default_timezone_set('America/New_York');
 $day = date('l');
 
 $query = "
@@ -72,6 +72,13 @@ oci_close($conn);
 </head>
 
 <body>
+    <?php if (empty($workouts)): ?>
+    <div class="workout">
+        <h2>
+            <?php echo $day; ?> - Rest Day
+        </h2>
+    </div>
+    <?php else: ?>
     <?php foreach ($workouts as $workout): ?>
     <div class="workout">
         <h2>
@@ -83,18 +90,18 @@ oci_close($conn);
         </div>
         <p class="workout-description">
             <?php
-                $i = 1;
-                $each_lift = explode(',', $workout['DESCRIPTION']); foreach ($each_lift as $lift) {
-                    echo "$i. ";
-                    echo $lift;
-                    echo "<br>";
-                    $i = $i + 1;
-                }
-                ?>
+                    $i = 1;
+                    $each_lift = explode(',', $workout['DESCRIPTION']); foreach ($each_lift as $lift) {
+                        echo "$i. ";
+                        echo $lift;
+                        echo "<br>";
+                        $i = $i + 1;
+                    }
+                    ?>
         </p>
     </div>
     <?php endforeach; ?>
-
+    <?php endif; ?>
 </body>
 
 </html>

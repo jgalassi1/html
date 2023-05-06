@@ -15,7 +15,6 @@ $query = "select *
                      WHEN 'Lunch' THEN 2
                      WHEN 'Dinner' THEN 3
                    END";
-
 $stid = oci_parse($conn, $query);
 oci_execute($stid);
 
@@ -108,35 +107,31 @@ oci_close($conn);
                 <?php echo $meal['DESCRIPTION']; ?>
             </p>
         </div>
-        <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var toggleButtons = document.querySelectorAll(".toggle-button");
-            for (var i = 0; i < toggleButtons.length; i++) {
-                toggleButtons[i].addEventListener("click", function() {
-                    var description = this.parentNode.querySelector(".description");
-                    if (description.style.display === "none") {
-                        description.style.display = "block";
-                        this.textContent = "-";
-                    } else {
-                        description.style.display = "none";
-                        this.textContent = "+";
-                    }
-                });
-
-                // Initialize button text and hide descriptions
-                var description = toggleButtons[i].parentNode.querySelector(".description");
-                description.style.display = "none";
-                toggleButtons[i].textContent = "+";
-            }
-        });
-        </script>
-
-
-
-
         <?php endforeach; ?>
     </div>
     <?php endforeach; ?>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var toggleButtons = document.querySelectorAll(".toggle-button");
+        for (var i = 0; i < toggleButtons.length; i++) {
+            toggleButtons[i].addEventListener("click", function() {
+                var description = this.parentNode.querySelector(".description");
+                if (description.style.display === "none") {
+                    description.style.display = "block";
+                    this.textContent = "-";
+                } else {
+                    description.style.display = "none";
+                    this.textContent = "+";
+                }
+            });
+
+            // Initialize button text and hide descriptions
+            var description = toggleButtons[i].parentNode.querySelector(".description");
+            description.style.display = "none";
+            toggleButtons[i].textContent = "+";
+        }
+    });
+    </script>
 </body>
 
 </html>

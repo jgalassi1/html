@@ -5,8 +5,8 @@ $conn = oci_connect("timmy", "timmy", "xe")
     or die("<br>Couldn't connect");
 
 $query = "
-    SELECT wp_id, split_name
-    FROM workout_plan
+    SELECT mp_id, name
+    FROM meal_plan
 ";
 
 $stid = oci_parse($conn, $query);
@@ -14,7 +14,7 @@ oci_execute($stid);
 
 
 while ($row = oci_fetch_array($stid, OCI_ASSOC + OCI_RETURN_NULLS)) {
-    $workoutPlans[] = $row;
+    $mealPlans[] = $row;
 }
 
 oci_free_statement($stid);
@@ -51,55 +51,75 @@ oci_close($conn);
     <br>
     <button type="button" class="btn btn-warning" onclick="location.href='home_page.php'">Back to Home</button>
     <div class="container">
-        <h1>Workout Plans</h1>
+        <?php include('login.php'); ?>
+        <h1>Meal Plans</h1>
         <div class="row">
-            <?php foreach ($workoutPlans as $workoutPlan): ?>
+            <?php foreach ($mealPlans as $mealPlan): ?>
             <div class="col-md-4 workout-plan-card">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">
                             <?php
 
-                                echo $workoutPlan['SPLIT_NAME']; ?>
+                                echo $mealPlan['NAME']; ?>
                         </h5>
                         <p class="card-text">
                             <?php
                                 putenv("ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe/");
                                 $conn = oci_connect("timmy", "timmy", "xe")
                                     or die("<br>Couldn't connect");
-                                $wp_id = $workoutPlan['WP_ID'];
+                                $mp_id = $mealPlan['MP_ID'];
                                 $query = "
-                                select name, w_day
-                                from workout w, workout_plan wp, w_wpnew wwp
-                                where w.workout_id = wwp.workout_id
-                                and wp.wp_id = wwp.wp_id
-                                and wp.wp_id = $wp_id
+                                select *
+                                from meal_plan mp, meal_mp mmp, meal m
+                                where mp.mp_id = mmp.mp_id
+                                and mmp.meal_id = m.meal_id
+                                and mp.mp_id = $mp_id
+                                ORDER BY CASE m.type
+                                                 WHEN 'Breakfast' THEN 1
+                                                 WHEN 'Lunch' THEN 2
+                                                 WHEN 'Dinner' THEN 3
+                                               END
                             ";
                                 $stid = oci_parse($conn, $query);
                                 oci_execute($stid);
-
-
+                                $prevType = null;
                                 while ($row = oci_fetch_array($stid, OCI_ASSOC + OCI_RETURN_NULLS)) {
-                                    echo $row['W_DAY'];
-                                    echo ": ";
-                                    echo $row['NAME'];
-                                    echo '<br>';
+                                    $type = $row['TYPE'];
+
+                                    if ($prevType !== $type) {
+                                        $meal[$type] = array(); // Reset the $meal array when the 'TYPE' changes
+                                        $prevType = $type;
+                                    }
+
+                                    $meal[$type][] = $row;
                                 }
-                                ?>
+                                foreach ($meal as $mealType => $mealData): ?>
+                        <h5>
+                            <?php echo $mealType; ?>
+                        </h5>
+                        <?php foreach ($mealData as $m): ?>
+                        <p>
+                            <?php echo $m['NAME']; ?>
+                        </p>
+
+
+                        <?php endforeach; ?>
+                        <?php endforeach; ?>
+
                         </p>
                         <a href="home_page.php">
                             <button type="button" class="btn btn-warning"
-                                onclick="updateWorkoutPlan(<?php echo $workoutPlan['WP_ID']; ?>)">Use Workout
-                                Plan</button> </a>
+                                onclick="updateMealPlan(<?php echo $mealPlan['MP_ID']; ?>)">Use Meal Plan</button> </a>
                     </div>
                 </div>
             </div>
             <?php endforeach; ?>
             <script>
-            function updateWorkoutPlan(wp_id) {
+            function updateMealPlan(mp_id) {
                 // Create an AJAX request
                 var xhr = new XMLHttpRequest();
-                xhr.open("POST", "update_wp.php", true);
+                xhr.open("POST", "update_mp.php", true);
                 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
                 xhr.onreadystatechange = function() {
@@ -109,8 +129,8 @@ oci_close($conn);
                     }
                 };
 
-                // Send the AJAX request with the wp_id parameter
-                xhr.send("wp_id=" + wp_id);
+                // Send the AJAX request with the mp_id parameter
+                xhr.send("mp_id=" + mp_id);
             }
             </script>
         </div>
