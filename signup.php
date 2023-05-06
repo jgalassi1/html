@@ -110,7 +110,7 @@
             </div>
             <button type="submit" class="btn btn-warning">Create Account</button>
         </form>
-        <a href="login.html" class="btn btn-secondary">Already have an account? Log in</a>
+        <a href="/" class="btn btn-secondary">Already have an account? Log in</a>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
